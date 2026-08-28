@@ -51,29 +51,8 @@ Raw data often contains anomalies, hardware glitches, and missing entries. The P
 
 ---
 
-## 🏗️ 2. Data Warehouse Architecture (Star Schema)
+##  2. Data Warehouse Architecture (Star Schema)
 The cleaned data is loaded into `NYC_Taxi_DW` structured as a **Star Schema** to optimize query performance and reduce storage redundancy.
-
-              ┌──────────────┐
-              │   Dim_Date   │
-              └──────┬───────┘
-                     │
-┌──────────────┐         │         ┌──────────────────┐
-│  Dim_Vendor  ├─────────┼─────────┤ Dim_PaymentType  │
-└──────────────┘         │         └──────────────────┘
-▼
-┌────────────────┐
-│ Fact_TaxiTrips │
-└────────────────┘
-▲
-┌──────────────┐         │         ┌──────────────────┐
-│ Dim_Ratecode ├─────────┼─────────┤   Dim_Location   │
-└──────────────┘         │         └──────────────────┘
-│
-┌──────────────┐
-│   Dim_Time   │
-└──────────────┘
-
 
 ### Key Dimensions:
 * **`Dim_Date`:** Calendar dimension covering all 2024 dates (`DateKey`, `Year`, `Quarter`, `Month`, `DayOfWeek`, `IsWeekend`).
@@ -82,7 +61,7 @@ The cleaned data is loaded into `NYC_Taxi_DW` structured as a **Star Schema** to
 
 ---
 
-## ⚡ 3. SQL Database Views for Performance Optimization
+##  3. SQL Database Views for Performance Optimization
 
 To prevent performance bottlenecks during Power BI refreshes, aggregations were offloaded to SQL Server using pre-calculated views:
 * **`vw_FinancialBreakdown`:** Aggregates base fares, tips, tolls, and airport surcharges.
@@ -91,7 +70,7 @@ To prevent performance bottlenecks during Power BI refreshes, aggregations were 
 
 ---
 
-## 📊 4. Interactive Power BI Dashboard
+##  4. Interactive Power BI Dashboard
 
 The dashboard consists of **3 key analytical pages**:
 
@@ -109,7 +88,7 @@ Analyzes Top 10 revenue-generating pickup zones, speed/distance ratios, and airp
 
 ---
 
-## 💡 Key Business Insights
+##  Key Business Insights
 
 1. **Peak Demand Windows:** Maximum ride volume and revenue peak between **5:00 PM and 7:00 PM** on weekdays (Monday–Friday).
 2. **Payment Preferences:** Credit cards account for over **80%** of total revenue and consistently yield higher tip percentages compared to cash.
@@ -117,7 +96,7 @@ Analyzes Top 10 revenue-generating pickup zones, speed/distance ratios, and airp
 
 ---
 
-## 🚀 How to Run the Project
+##  How to Run the Project
 
 1. **Download Dataset:** Download the dataset directly from [Cloudfront Direct Link](https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet) and place it in your project root directory.
 2. **Database Setup:** Open SQL Server Management Studio (SSMS) and create database `NYC_Taxi_DW`.
