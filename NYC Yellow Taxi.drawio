@@ -1,0 +1,88 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="DRKrsWeIYyZJaIQtf_4Q">
+    <mxGraphModel dx="1717" dy="5704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-3" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Fact_TaxiTrips " vertex="1">
+          <mxGeometry height="420" width="220" x="1000" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-16" parent="uDFLxXsO3W8ygjGsPATQ-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="TripID (PK)&lt;div&gt;VendorKey(FK)&lt;/div&gt;&lt;div&gt;RatecodeKey (FK)&lt;/div&gt;&lt;div&gt;PaymentTypeKey (FK)&lt;/div&gt;&lt;div&gt;DOLocationKey&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(FK)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;PULocationKey&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(FK)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;PickupDateKey&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(FK)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;DropoffDateKey&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(FK)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;PickupTimeKey&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(FK)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;DropoffTimeKey&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(FK)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;StoreAndFwdFlag&amp;nbsp;&lt;/div&gt;&lt;div&gt;PassengerCount&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;TripDistance&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;FareAmount&amp;nbsp;&lt;/div&gt;&lt;div&gt;Extra&amp;nbsp;&lt;/div&gt;&lt;div&gt;MtaTax&lt;/div&gt;&lt;div&gt;TipAmount&amp;nbsp;&lt;/div&gt;&lt;div&gt;TollsAmount&amp;nbsp;&lt;/div&gt;&lt;div&gt;ImprovementSurcharge&amp;nbsp;&lt;/div&gt;&lt;div&gt;CongestionSurcharge&lt;/div&gt;&lt;div&gt;AirportFee&amp;nbsp;&lt;/div&gt;&lt;div&gt;TotalAmount&amp;nbsp;&lt;/div&gt;&lt;div&gt;TripDurationMin&amp;nbsp;&lt;/div&gt;&lt;div&gt;AvgSpeedMph &amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="390" width="210" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-4" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Dim_Location" vertex="1">
+          <mxGeometry height="130" width="150" x="1320" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-13" parent="uDFLxXsO3W8ygjGsPATQ-4" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="LocationKey (PK)&amp;nbsp;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;LocationID&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Borough&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Zone&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;service_zone&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="150" x="10" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-5" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Dim_Ratecode" vertex="1">
+          <mxGeometry height="120" width="160" x="730" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-11" parent="uDFLxXsO3W8ygjGsPATQ-5" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="RatecodeKey (PK)&lt;div&gt;RatecodeID&lt;/div&gt;&lt;div&gt;RateDescription &amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-6" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Dim_Vendor" vertex="1">
+          <mxGeometry height="120" width="170" x="730" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-10" parent="uDFLxXsO3W8ygjGsPATQ-6" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="VendorKey (PK)&lt;div&gt;VendorID&lt;/div&gt;&lt;div&gt;VendorName &amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="140" x="10" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-7" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Dim_PaymentType" vertex="1">
+          <mxGeometry height="130" width="160" x="1330" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-12" parent="uDFLxXsO3W8ygjGsPATQ-7" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="PaymentTypeKey (PK)&lt;div&gt;PaymentTypeID&lt;/div&gt;&lt;div&gt;PaymentDescription &amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="150" x="10" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-8" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Dim_Date" vertex="1">
+          <mxGeometry height="220" width="200" x="800" y="-60" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-14" parent="uDFLxXsO3W8ygjGsPATQ-8" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="DateKey (PK)&lt;div&gt;FullDate&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Year&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Quarter&amp;nbsp;&lt;/div&gt;&lt;div&gt;QuarterName&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Month&lt;/span&gt;&lt;/div&gt;&lt;div&gt;MonthName&amp;nbsp;&lt;/div&gt;&lt;div&gt;DayOfMonth&amp;nbsp;&lt;/div&gt;&lt;div&gt;DayOfWeek&amp;nbsp;&lt;/div&gt;&lt;div&gt;DayName&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;IsWeekend&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;IsHoliday&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="170" x="10" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-9" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Dim_Time" vertex="1">
+          <mxGeometry height="220" width="180" x="1260" y="-60" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-15" parent="uDFLxXsO3W8ygjGsPATQ-9" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="TimeKey (PK)&lt;div&gt;TimeValue&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Hour&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Minute&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;AmPm&amp;nbsp;&lt;/div&gt;&lt;div&gt;TimeBucket &amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="160" x="10" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-29" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.205;entryDx=0;entryDy=0;entryPerimeter=0;" target="uDFLxXsO3W8ygjGsPATQ-16" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1320" y="340" as="sourcePoint" />
+            <mxPoint x="1230" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-30" edge="1" parent="1" source="uDFLxXsO3W8ygjGsPATQ-16" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1.015;exitY=0.846;exitDx=0;exitDy=0;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;curved=1;" target="uDFLxXsO3W8ygjGsPATQ-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1180" y="540" as="sourcePoint" />
+            <mxPoint x="1230" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-31" edge="1" parent="1" source="uDFLxXsO3W8ygjGsPATQ-5" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1210" y="430" as="sourcePoint" />
+            <mxPoint x="1000" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-32" edge="1" parent="1" source="uDFLxXsO3W8ygjGsPATQ-6" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="970" y="190" as="sourcePoint" />
+            <mxPoint x="1000" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-33" edge="1" parent="1" source="uDFLxXsO3W8ygjGsPATQ-9" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;" target="uDFLxXsO3W8ygjGsPATQ-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="950" y="310" as="sourcePoint" />
+            <mxPoint x="1050" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uDFLxXsO3W8ygjGsPATQ-36" edge="1" parent="1" source="uDFLxXsO3W8ygjGsPATQ-3" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;" target="uDFLxXsO3W8ygjGsPATQ-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="930" y="460" as="sourcePoint" />
+            <mxPoint x="980" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
